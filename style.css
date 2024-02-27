@@ -1,0 +1,36 @@
+header {
+    height: 70px;
+}
+
+/* header .search-bar {
+    
+} */
+
+aside {
+    width: 250px;
+    height: calc(100vh - 70px);
+    flex-shrink: 0;
+    background-image: url(img/sidebar-bg.png);
+    background-size: cover;
+    background-color: #051e34;
+}
+
+main {
+    background-color: brown;
+    width: 100%;
+    height: calc(100vh - 70px);
+}
+
+.ms-info {
+    background-color: #1b72e8;
+}
+
+.square {
+    width: 40px;
+    height: 40px;
+    border: 1px solid white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
