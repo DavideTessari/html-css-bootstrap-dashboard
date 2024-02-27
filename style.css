@@ -2,9 +2,9 @@ header {
     height: 70px;
 }
 
-/* header .search-bar {
-    
-} */
+ul {
+    list-style: none;
+}
 
 aside {
     width: 250px;
@@ -16,9 +16,9 @@ aside {
 }
 
 main {
-    background-color: brown;
     width: 100%;
     height: calc(100vh - 70px);
+    overflow-y: auto;
 }
 
 .ms-info {
@@ -34,3 +34,10 @@ main {
     align-items: center;
 }
 
+.ms-tag-logo {
+    height: 25px;
+}
+
+.pippo {
+    border: none;
+}
