@@ -40,6 +40,10 @@ aside {
     .logo-2 {
         display: block;
     }
+
+    header .ms-delated {
+        display: none;
+    }
 }
 
 main {
