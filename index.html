@@ -33,11 +33,11 @@
     <div class="ms-wrapper-page d-flex">
         <aside class="d-flex flex-column gap-4 py-4">
             <ul class="flex-grow-1">
-                <li class="d-flex gap-2"><i class="fa-solid fa-house text-white mt-1"></i><p class="text-white">Home</p></li>
-                <li class="d-flex gap-3"><i class="fa-solid fa-chart-simple text-white  mt-1"></i><p class="text-white">Stats</p></li>
-                <li class="d-flex gap-2"><i class="fa-solid fa-signal text-white  mt-1"></i><p class="text-white">Signals</p></li>
+                <li class="d-flex gap-2 justify-content-center"><i class="fa-solid fa-house text-white mt-1"></i><p class="text-white">Home</p></li>
+                <li class="d-flex gap-3 justify-content-center"><i class="fa-solid fa-chart-simple text-white mt-1"></i><p class="text-white">Stats</p></li>
+                <li class="d-flex gap-2 justify-content-center"><i class="fa-solid fa-signal text-white  mt-1"></i><p class="text-white">Signals</p></li>
             </ul>
-            <div class="d-flex px-4 ms-1 gap-2"><i class="fa-solid fa-gear text-white  mt-1"></i><p class="text-white">Admin</p></div>
+            <div class="d-flex gap-2 justify-content-center"><i class="fa-solid fa-gear text-white mt-1"></i><p class="text-white">Admin</p></div>
         </aside>
 
         <main>
@@ -46,7 +46,7 @@
                     <div class="col-sm-4 col-lg-6 order-2 order-sm-0">
                         <div class="d-flex">
                             <h2>Boolean</h2>
-                            <span class="badge rounded-pill ms-blue d-flex align-items-center">Piano blaze</span>
+                            <span class="badge rounded-pill ms-blue align-self-center ms-1">Piano blaze</span>
                         </div>
                         <i class="fa-solid fa-forward fs-6"></i>
                         <span class="badge rounded-pill ms-blue">3 apps</span>
@@ -64,11 +64,60 @@
                         <div class="square" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i class="fa-solid fa-plus text-white"></i>
                             <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
                                 <div class="offcanvas-header">
-                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+                                    <h5 class="offcanvas-title" id="offcanvasRightLabel">Iserisci un nuovo studente</h5>
                                 <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
                                 </div>
                                 <div class="offcanvas-body">
-                                    ...
+                                    <div class="d-flex gap-3">
+                                        <div class="ms">
+                                            <label for="text" class="form-label">Nome</label>
+                                            <input type="text" id="text" class="form-control">
+                                        </div>
+                                        <div class="ms">
+                                            <label for="text" class="form-label">Cognome</label>
+                                            <input type="text" id="text" class="form-control">
+                                        </div> 
+                                    </div>
+                                    <div class="d-flex gap-3 mt-3">
+                                        <div class="ms">
+                                            <label for="email" class="form-label">Email</label>
+                                            <div class="d-flex">
+                                                <span class="input-group-text position-absolute" id="basic-addon1">@</span>
+                                                <input type="email" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="ms">
+                                            <label for="inputPassword5" class="form-label">Password</label>
+                                            <input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock">
+                                        </div>
+                                    </div>
+                                    <label for="text" class="form-label mt-3">Indirizzo</label>
+                                    <input type="text" id="text" class="form-control">
+                                    <div class="d-flex gap-2 mt-3">
+                                        <div class="col-md-6">
+                                            <label for="inputCity" class="form-label">Città</label>
+                                            <input type="text" class="form-control" id="inputCity">
+                                        </div>
+                                        <div class="col-md-4">
+                                            <label for="inputState" class="form-label">Stato</label>
+                                            <select id="inputState" class="form-select">
+                                            </select>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <label for="inputZip" class="form-label">Cap</label>
+                                            <input type="text" class="form-control" id="inputZip">
+                                        </div>
+                                    </div>
+                                        <div class="col-12 mt-3">
+                                            <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="gridCheck">
+                                            <label class="form-check-label" for="gridCheck">Seleziona per proseguire</label>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 d-flex gap-1 mt-3">
+                                        <button type="submit" class="btn btn-primary">Salva</button>
+                                        <button type="submit" class="btn btn-warning">Svuota</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -85,68 +134,68 @@
                                     <thead>
                                     <tr>
                                         <th scope="col">Nome</th>
-                                        <th scope="col" class="delated">Data inizio</th>
-                                        <th scope="col" class="delated">Roi</th>
-                                        <th scope="col">Stato</th>
-                                        <th scope="col">Azioni</th>
+                                        <th scope="col" class="delated text-center">Data inizio</th>
+                                        <th scope="col" class="delated text-center">Roi</th>
+                                        <th scope="col" class="text-center">Stato</th>
+                                        <th scope="col" class="text-center">Azioni</th>
                                     </tr>
                                     </thead>
                                     <tbody>
                                     <tr>
                                         <td scope="row"><img src="img/class-avatar.jpg" class="ms-tag-logo"> Classe 75</td>
-                                        <td  class="delated">15 febbraio 2021</td>
-                                        <td  class="delated">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td class="gap-2"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
+                                        <td  class="delated text-center">15 febbraio 2021</td>
+                                        <td  class="delated text-center">20%</td>
+                                        <td class="text-center"><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                        <td class="gap-2 text-center"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
                                     </tr>
                                     <tr>
                                         <td scope="row"><img src="img/class-avatar.jpg" class="ms-tag-logo"> Classe 75</td>
-                                        <td  class="delated">15 febbraio 2021</td>
-                                        <td  class="delated">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td class="gap-2"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
+                                        <td  class="delated text-center">15 febbraio 2021</td>
+                                        <td  class="delated text-center">20%</td>
+                                        <td class="text-center"><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                        <td class="gap-2 text-center"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
                                     </tr>
                                     <tr>
                                         <td scope="row"><img src="img/class-avatar.jpg" class="ms-tag-logo"> Classe 75</td>
-                                        <td  class="delated">15 febbraio 2021</td>
-                                        <td  class="delated">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-warning">process</span></td>
-                                        <td class="gap-2"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
+                                        <td  class="delated text-center">15 febbraio 2021</td>
+                                        <td  class="delated text-center">20%</td>
+                                        <td class="text-center"><span class="badge rounded-pill text-bg-warning">process</span></td>
+                                        <td class="gap-2 text-center"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
                                     </tr>
                                     <tr>
                                         <td scope="row"><img src="img/class-avatar.jpg" class="ms-tag-logo"> Classe 75</td>
-                                        <td  class="delated">15 febbraio 2021</td>
-                                        <td  class="delated">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td class="gap-2"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
+                                        <td  class="delated text-center">15 febbraio 2021</td>
+                                        <td  class="delated text-center">20%</td>
+                                        <td class="text-center"><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                        <td class="gap-2 text-center"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
                                     </tr>
                                     <tr>
                                         <td scope="row"><img src="img/class-avatar.jpg" class="ms-tag-logo"> Classe 75</td>
-                                        <td  class="delated">15 febbraio 2021</td>
-                                        <td  class="delated">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-danger">failed</span></td>
-                                        <td class="gap-2"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
+                                        <td  class="delated text-center">15 febbraio 2021</td>
+                                        <td  class="delated text-center">20%</td>
+                                        <td class="text-center"><span class="badge rounded-pill text-bg-danger">failed</span></td>
+                                        <td class="gap-2 text-center"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
                                     </tr>
                                     <tr>
                                         <td scope="row"><img src="img/class-avatar.jpg" class="ms-tag-logo"> Classe 75</td>
-                                        <td  class="delated">15 febbraio 2021</td>
-                                        <td  class="delated">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td class="gap-2"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
+                                        <td  class="delated text-center">15 febbraio 2021</td>
+                                        <td  class="delated text-center">20%</td>
+                                        <td class="text-center"><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                        <td class="gap-2 text-center"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
                                     </tr>
                                     <tr>
                                         <td scope="row"><img src="img/class-avatar.jpg" class="ms-tag-logo"> Classe 75</td>
-                                        <td  class="delated">15 febbraio 2021</td>
-                                        <td  class="delated">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-danger">failed</span></td>
-                                        <td class="gap-2"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
+                                        <td  class="delated text-center">15 febbraio 2021</td>
+                                        <td  class="delated text-center">20%</td>
+                                        <td class="text-center"><span class="badge rounded-pill text-bg-danger">failed</span></td>
+                                        <td class="gap-2 text-center"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
                                     </tr>
                                     <tr>
                                         <td scope="row"><img src="img/class-avatar.jpg" class="ms-tag-logo"> Classe 75</td>
-                                        <td  class="delated">15 febbraio 2021</td>
-                                        <td  class="delated">20%</td>
-                                        <td><span class="badge rounded-pill text-bg-success">Done</span></td>
-                                        <td class="gap-2"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
+                                        <td  class="delated text-center">15 febbraio 2021</td>
+                                        <td  class="delated text-center">20%</td>
+                                        <td class="text-center text-center"><span class="badge rounded-pill text-bg-success">Done</span></td>
+                                        <td class="gap-2 text-center"><button id="searchButton" type="submit"><i class="fa-solid fa-pen text-secondary"></i></button><button id="searchButton" type="submit"><i class="fa-solid fa-trash text-secondary"></i></button></td>
                                     </tr>
                                     </tbody>
                                 </table>

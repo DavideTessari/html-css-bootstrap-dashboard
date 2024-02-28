@@ -7,7 +7,7 @@ header .search-bar {
     padding: 10px;
     border-radius: 10px;
     flex-grow: 1;
-    margin: 0 10px;
+    margin: 0 13px;
 }
 
 header input {
@@ -18,10 +18,11 @@ header input {
 
 ul {
     list-style: none;
+    padding-left: 0;
 }
 
 aside {
-    width: 150px;
+    width: 160px;
     height: calc(100vh - 70px);
     flex-shrink: 0;
     background-image: url(img/sidebar-bg.png);
@@ -80,10 +81,10 @@ main {
     }
 
     ul i {
-        margin: 10px -5px;
+        margin: 20px 0;
     }
 
-    p {
+    aside p {
         display: none;
     }
 
@@ -103,4 +104,3 @@ main {
         display: inline-block;
     }
 }
-
