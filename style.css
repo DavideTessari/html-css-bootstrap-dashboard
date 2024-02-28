@@ -15,6 +15,11 @@ aside {
     background-color: #051e34;
 }
 
+.logo-2 {
+    display: none;
+    height: 40px;
+}
+
 @media (max-width: 768px) {
     aside {
         width: 70px;
@@ -27,8 +32,15 @@ aside {
     p {
         display: none;
     }
-}
 
+    .logo-boolean {
+        display: none;
+    }
+
+    .logo-2 {
+        display: block;
+    }
+}
 
 main {
     width: 100%;
@@ -53,6 +65,6 @@ main {
     height: 25px;
 }
 
-.pippo {
-    border: none;
+.ms-blue {
+    background-color: #165bba;
 }
