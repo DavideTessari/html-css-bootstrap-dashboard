@@ -68,3 +68,9 @@ main {
 .ms-blue {
     background-color: #165bba;
 }
+
+@media (max-width: 576px) {
+    .delated {
+        display: none;
+    }
+}
