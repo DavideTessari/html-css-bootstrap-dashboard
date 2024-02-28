@@ -34,30 +34,8 @@ aside {
     height: 40px;
 }
 
-@media (max-width: 768px) {
-    aside {
-        width: 70px;
-    }
-
-    ul i {
-        margin: 10px -5px;
-    }
-
-    p {
-        display: none;
-    }
-
-    .logo-boolean {
-        display: none;
-    }
-
-    .logo-2 {
-        display: block;
-    }
-
-    header .ms-delated {
-        display: none;
-    }
+.ms-block {
+    display: none;
 }
 
 main {
@@ -87,8 +65,42 @@ main {
     background-color: #165bba;
 }
 
+/*------------
+  RESPONSIVE
+------------*/
 @media (max-width: 576px) {
     .delated {
         display: none;
     }
 }
+
+@media (max-width: 768px) {
+    aside {
+        width: 70px;
+    }
+
+    ul i {
+        margin: 10px -5px;
+    }
+
+    p {
+        display: none;
+    }
+
+    .logo-boolean {
+        display: none;
+    }
+
+    .logo-2 {
+        display: block;
+    }
+
+    .ms-delated {
+        display: none;
+    }
+
+    .ms-block {
+        display: inline-block;
+    }
+}
+
