@@ -2,6 +2,19 @@ header {
     height: 70px;
 }
 
+header .search-bar {
+    background-color: #e5e5e5;
+    padding: 10px;
+    border-radius: 10px;
+    flex-grow: 1;
+    margin: 0 10px;
+}
+
+header input {
+    border: transparent;
+    background-color: transparent;
+}
+
 ul {
     list-style: none;
 }
