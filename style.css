@@ -7,13 +7,28 @@ ul {
 }
 
 aside {
-    width: 250px;
+    width: 150px;
     height: calc(100vh - 70px);
     flex-shrink: 0;
     background-image: url(img/sidebar-bg.png);
     background-size: cover;
     background-color: #051e34;
 }
+
+@media (max-width: 768px) {
+    aside {
+        width: 70px;
+    }
+
+    ul i {
+        margin: 10px -5px;
+    }
+
+    p {
+        display: none;
+    }
+}
+
 
 main {
     width: 100%;
