@@ -87,6 +87,10 @@ main .table button:hover {
     background-color: #165bba;
 }
 
+.ms {
+    width: 100%;
+}
+
 #offcanvasRight {
     width: 50vw;
 }
