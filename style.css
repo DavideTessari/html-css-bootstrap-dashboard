@@ -87,7 +87,7 @@ main .table button:hover {
     background-color: #165bba;
 }
 
-.offcanvas {
+#offcanvasRight {
     width: 50vw;
 }
 
@@ -127,5 +127,9 @@ main .table button:hover {
 
     .ms-block {
         display: inline-block;
+    }
+
+    #offcanvasRight {
+        width: 100vw;
     }
 }  
