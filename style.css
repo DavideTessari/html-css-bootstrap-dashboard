@@ -30,6 +30,12 @@ aside {
     background-color: #051e34;
 }
 
+.ms-opacity-background:hover {
+    background-color: rgba(255, 255, 255, 0.5);
+    margin: 0 15%;
+    translate: 10px;
+}
+
 .logo-2 {
     display: none;
     height: 40px;
@@ -43,6 +49,21 @@ main {
     width: 100%;
     height: calc(100vh - 70px);
     overflow-y: auto;
+}
+
+main .table button {
+    border-color: #6c757d;
+    border-radius: 5px;
+    background-color: inherit;
+    margin: 5px 4px;
+}
+
+main .table button:hover {
+    background-color:rgba(108, 117, 125, 0.3);
+}
+
+.ms-50 {
+    width: 50%;
 }
 
 .ms-info {
@@ -64,6 +85,10 @@ main {
 
 .ms-blue {
     background-color: #165bba;
+}
+
+.offcanvas {
+    width: 50vw;
 }
 
 /*------------
@@ -103,4 +128,4 @@ main {
     .ms-block {
         display: inline-block;
     }
-}
+}  
